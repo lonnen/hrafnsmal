@@ -16,7 +16,7 @@ if (system.args.length === 1) {
             return;
         }
         parsed = uri(url);
-        console.log(JSON.stringify(parsed, undefined, 4));
+        console.log(JSON.stringify(parsed._parts, undefined, 4));
     };
 
     page.open(address, function (status) {
