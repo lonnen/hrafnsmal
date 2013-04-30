@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>hrafnsmal</title>
+
+  <script src="raven.js"></script>
+  <script>
+    var options = {}
+    Raven.config('https://public@localhost/', options).install()
+  </script>
+</head>
+
+<body>
+    <h1>Hrafnsmal</h1>
+    <p>
+        Generate a raven.js crash. Best run from phantom.js
+    </p>
+    <script src="hrafnsmal.js"></script>
+</body>
+</html>

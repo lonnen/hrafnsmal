@@ -1,0 +1,16 @@
+{
+  "name": "hrafnsmal",
+  "version": "0.1",
+  "private": true,
+  "engines": {
+    "node": ">= 0.8.9",
+    "npm": "1.1.x"
+  },
+  "dependencies": {
+    "phantom": "0.4.2",
+    "URIjs": "1.10.2",
+  },
+  "scripts": {
+    "crash": "make crash"
+  }
+}
