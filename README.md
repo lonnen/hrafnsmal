@@ -1,4 +1,4 @@
 hrafnsmal
 ---------
 
-generate a mess of raven-js errors
+generate a raven-js error in the command line
