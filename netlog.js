@@ -10,12 +10,12 @@ if (system.args.length === 1) {
     address = system.args[1];
 
     page.onResourceRequested = function (req) {
-        var url = req.url;
+        var url = req.url,
+            parsed;
         if (!(/sentry/).test(url)) {
             return;
         }
-        var parsed = uri(url);
-
+        parsed = uri(url);
         console.log(JSON.stringify(parsed, undefined, 4));
     };
 
