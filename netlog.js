@@ -15,8 +15,9 @@ if (system.args.length === 1) {
         if (!(/sentry/).test(url)) {
             return;
         }
-        parsed = uri(url);
-        console.log(JSON.stringify(parsed._parts, undefined, 4));
+        parsed = uri(url)._parts;
+        parsed['fullUrl'] = url;
+        console.log(JSON.stringify(parsed, undefined, 4));
     };
 
     page.open(address, function (status) {
